@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ranking",
+    "title": "次元排名大挑戰",
+    "icon": "🏆",
+    "color": "var(--lemon-l)",
+    "questions": [
+      { "q": "2025 次元排名的 Top1 是誰？", "options": ["蕾潔", "豐川祥子", "瑪艾兒", "弗洛洛"], "answer": 0, "explain": "《鏈鋸人 蕾潔篇》的蕾潔，一舉登頂。" },
+      { "q": "2024 次元排名 Top1 的高松燈，出自哪個作品？", "options": ["MyGO!!!!!", "Ave Mujica", "GIRLS BAND CRY", "孤獨搖滾"], "answer": 0, "explain": "迷路的孩子們，2024 年度第一。" },
+      { "q": "下列哪位角色連續兩年都擠進榜單？", "options": ["豐川祥子", "高松燈", "鈴", "芙寧娜"], "answer": 0, "explain": "2024 Top6 → 2025 Top2，祥子一路往上衝。" },
+      { "q": "2025 Top3 的瑪艾兒出自哪款遊戲？", "options": ["光與影：33號遠征隊", "鳴潮", "原神", "絕區零"], "answer": 0 },
+      { "q": "2024 Top10 的寧拙出自哪部小說？", "options": ["仙工開物", "詭祕之主", "撈屍人", "宿命之環"], "answer": 0, "explain": "玄幻機關術，段複評 93。" },
+      { "q": "2024 次元排名 Top88 是哪個「角色」？", "options": ["ChatGPT", "Siri", "初音未來", "奶龍"], "answer": 0, "explain": "分類寫著「人工智能」。初音未來是 Top90、奶龍是 Top36。" },
+      { "q": "天音彼方是哪個團體的 VTuber？", "options": ["hololive", "Nijisanji", "VShojo", "台V"], "answer": 0, "explain": "2024 Top73、2025 Top5，大躍進。" },
+      { "q": "2025 次元排名中，哪個分類上榜人數最多？", "options": ["動畫", "小說", "遊戲", "VTuber"], "answer": 0, "explain": "動畫 49 位、小說 27 位、遊戲 21 位。" }
+    ]
+  },
+  {
+    "id": "reviews",
+    "title": "網文 × 輕小說評分王",
+    "icon": "📚",
+    "color": "var(--pink-l)",
+    "questions": [
+      { "q": "《神的模仿犯》的段複評是幾分？", "options": ["100", "96", "93.5", "90"], "answer": 0, "explain": "全站唯一的滿分。" },
+      { "q": "《詭祕之主》的主角是？", "options": ["克萊恩•莫雷蒂", "鄧肯", "林思之", "寧拙"], "answer": 0 },
+      { "q": "《歡迎來到實力至上主義的教室》的複評是？", "options": ["96.5", "94.5", "93", "90"], "answer": 0 },
+      { "q": "評級「AA」代表什麼？", "options": ["絕佳作品", "神作", "值得一看", "差強人意"], "answer": 0 },
+      { "q": "《深海餘燼》的主角是？", "options": ["鄧肯", "高陽", "陳然", "程實"], "answer": 0, "explain": "亞空間陰影幽靈船長。" },
+      { "q": "網文評分中「毒點指標」的範圍是？", "options": ["T0~T3", "P0~P4", "Q-~Q++", "M%"], "answer": 0, "explain": "P 是劇情分級、Q 是文字藝術、M 是水文百分比。" },
+      { "q": "輕小說名詞「倒反正邪」是什麼意思？", "options": ["魔王善良、女神惡毒", "轉生成魔物", "回到若干年前", "以謀略為主"], "answer": 0 }
+    ]
+  },
+  {
+    "id": "millsage",
+    "title": "millsage 入坑測驗",
+    "icon": "🌸",
+    "color": "var(--violet-l)",
+    "questions": [
+      { "q": "millsage 的主唱同時負責什麼樂器？", "options": ["鍵盤", "吉他", "貝斯", "鼓"], "answer": 0, "explain": "BanG Dream! 系列第一個鍵盤主唱。" },
+      { "q": "millsage 在哪款遊戲登場？", "options": ["BanG Dream! Our Notes", "少女樂團派對", "Project Sekai", "偶像大師"], "answer": 0 },
+      { "q": "樂團名中的 mill 來自法語 mille，意思是？", "options": ["千", "磨坊", "百萬", "夢"], "answer": 0, "explain": "sage 則來自 corsage（胸花）。" },
+      { "q": "millsage 的音樂風格是？", "options": ["數學搖滾", "視覺系金屬", "偶像流行", "爵士"], "answer": 0, "explain": "奇數拍號、複雜節奏、樂器對位。" },
+      { "q": "millsage 的鼓手是誰？", "options": ["和泉 朋花", "琴平 凪", "伊沢 なつめ", "浜崎 まほろ"], "answer": 0 },
+      { "q": "汐見蛍的聲優是？", "options": ["薬師寺李有", "千春", "咲川ひなの", "伊駒ゆりえ"], "answer": 0 }
+    ]
+  }
+]

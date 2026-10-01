@@ -1,0 +1,99 @@
+[
+  {
+    "id": "dimension",
+    "title": "次元排名填字",
+    "icon": "🏆",
+    "color": "var(--lemon-l)",
+    "rows": 6,
+    "cols": 8,
+    "words": [
+      {
+        "answer": "葬送的芙莉蓮",
+        "row": 0,
+        "col": 1,
+        "dir": "across",
+        "clue": "長壽精靈魔法使的勇者後日談（作品名）"
+      },
+      {
+        "answer": "芙寧娜",
+        "row": 0,
+        "col": 4,
+        "dir": "down",
+        "clue": "原神的水神，2024 Top7"
+      },
+      {
+        "answer": "天使娜娜",
+        "row": 2,
+        "col": 2,
+        "dir": "across",
+        "clue": "《重返未來1999》的角色，2024 Top99"
+      },
+      {
+        "answer": "天音彼方",
+        "row": 2,
+        "col": 2,
+        "dir": "down",
+        "clue": "hololive 的天使，2025 Top5"
+      },
+      {
+        "answer": "明日方舟",
+        "row": 5,
+        "col": 0,
+        "dir": "across",
+        "clue": "拉普蘭德與普瑞賽斯出自這款遊戲"
+      },
+      {
+        "answer": "娜斯塔霞",
+        "row": 2,
+        "col": 5,
+        "dir": "down",
+        "clue": "杜斯妥也夫斯基《白癡》的女主角"
+      },
+      {
+        "answer": "三塔遊戲",
+        "row": 4,
+        "col": 4,
+        "dir": "across",
+        "clue": "聞夕樹所在的小說"
+      }
+    ]
+  },
+  {
+    "id": "webnovel",
+    "title": "網文神作填字",
+    "icon": "📖",
+    "color": "var(--violet-l)",
+    "rows": 6,
+    "cols": 7,
+    "words": [
+      {
+        "answer": "詭祕之主",
+        "row": 0,
+        "col": 2,
+        "dir": "down",
+        "clue": "蒸氣時代、魔藥序列，完評 96"
+      },
+      {
+        "answer": "詭語者聯盟",
+        "row": 0,
+        "col": 2,
+        "dir": "across",
+        "clue": "禁謊世界的智鬥，主角陳然"
+      },
+      {
+        "answer": "異界之書",
+        "row": 2,
+        "col": 0,
+        "dir": "across",
+        "clue": "邢天宇、寧文瑞，完評 91.5"
+      },
+      {
+        "answer": "異獸迷城",
+        "row": 2,
+        "col": 0,
+        "dir": "down",
+        "clue": "偽人世界，主角高陽"
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "reader-2026",
+    "title": "讀者小調查",
+    "icon": "📮",
+    "color": "var(--pink-l)",
+    "thanks": "收到啦！謝謝你～",
+    "questions": [
+      { "id": "fav", "type": "single", "q": "你最常看哪一類？", "required": true, "options": ["動畫", "遊戲", "網文", "輕小說", "VTuber"] },
+      { "id": "want", "type": "multi", "q": "想在這裡看到更多什麼？", "options": ["年度獎項", "推薦心得", "小遊戲", "樂團與音樂", "角色排名"] },
+      { "id": "rate", "type": "rating", "q": "給這個網站打幾顆星？", "required": true, "icon": "⭐", "max": 5 },
+      { "id": "millsage", "type": "scale", "q": "對 millsage 的期待度", "max": 5, "labels": ["冷靜觀望", "已經入坑"] },
+      { "id": "rec", "type": "text", "q": "有想推薦給站長的作品嗎？", "placeholder": "書名、動畫、遊戲都可以" }
+    ]
+  },
+  {
+    "id": "nominate-2026",
+    "title": "2026 次元排名提名",
+    "icon": "🏆",
+    "color": "var(--lemon-l)",
+    "thanks": "提名已收到，年底見！",
+    "questions": [
+      { "id": "top1", "type": "text", "q": "你心中 2026 的 Top1 角色", "required": true, "placeholder": "角色名 + 作品" },
+      { "id": "anime", "type": "text", "q": "最佳動畫角色", "placeholder": "角色名 + 作品" },
+      { "id": "game", "type": "text", "q": "最佳遊戲角色", "placeholder": "角色名 + 作品" },
+      { "id": "novel", "type": "text", "q": "最佳小說角色", "placeholder": "角色名 + 作品" }
+    ]
+  }
+]

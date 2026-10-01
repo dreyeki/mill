@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffd6e8">
+  <meta name="description" content="個人評價獎項、推薦心得、小遊戲與調查問卷">
+  <title>Mill 次元放送局</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Mill">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mill 次元放送局">
+  <meta property="og:description" content="個人評價獎項、推薦心得、小遊戲與調查問卷">
+  <meta property="og:image" content="https://dreyeki.github.io/mill/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-deco" aria-hidden="true">
+    <span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span>
+    <span class="blob b1"></span><span class="blob b2"></span>
+  </div>
+
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="回首頁">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-name" id="brandName">Mill 次元放送局</span>
+    </a>
+    <a href="#/me" class="lv-chip" id="lvChip" aria-label="我的等級">
+      <svg class="lv-ring" viewBox="0 0 36 36" aria-hidden="true">
+        <circle cx="18" cy="18" r="15" class="ring-bg"/>
+        <circle cx="18" cy="18" r="15" class="ring-fg" pathLength="100"/>
+      </svg>
+      <span class="lv-num" id="lvNum">0</span>
+      <span class="lv-pts"><b id="lvPts">7</b><small>/10</small></span>
+    </a>
+  </header>
+
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="主要導覽">
+    <a href="#/" data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7v8a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg><span>首頁</span></a>
+    <a href="#/awards" data-tab="awards"><svg viewBox="0 0 24 24"><path d="M7 4h10v4a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4M12 13v4M8 20h8M9 17h6"/></svg><span>獎項</span></a>
+    <a href="#/reviews" data-tab="reviews"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h5v17H6a2 2 0 0 0-2 2zM20 5a2 2 0 0 0-2-2h-5v17h5a2 2 0 0 1 2 2z"/></svg><span>心得</span></a>
+    <a href="#/games" data-tab="games"><svg viewBox="0 0 24 24"><path d="M6 8h12a4 4 0 0 1 4 4v1a4 4 0 0 1-7 2.6L14 14h-4l-1 1.6A4 4 0 0 1 2 13v-1a4 4 0 0 1 4-4zM7 10v4M5 12h4M16 11h.01M18 13h.01"/></svg><span>遊戲</span></a>
+    <a href="#/me" data-tab="me"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>我的</span></a>
+  </nav>
+
+  <div id="fx-layer" aria-hidden="true"></div>
+  <div id="toast-layer" role="status" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <noscript><p style="padding:24px">這個網站需要開啟 JavaScript 才能瀏覽喔。</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

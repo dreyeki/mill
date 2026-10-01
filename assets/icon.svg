@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#ffe0ee"/>
+<rect width="512" height="512" rx="112" fill="none" stroke="#2b2350" stroke-width="20" opacity="0"/>
+<g transform="rotate(-8 256 256)">
+<rect x="100" y="110" width="312" height="312" rx="72" fill="#2b2350"/>
+<rect x="86" y="92" width="312" height="312" rx="72" fill="#ff7eb6" stroke="#2b2350" stroke-width="18"/>
+<text x="242" y="330" text-anchor="middle" font-family="'Baloo 2','Arial Rounded MT Bold','Nunito',sans-serif" font-weight="800" font-size="250" fill="#fff" stroke="#2b2350" stroke-width="12" paint-order="stroke">M</text>
+</g>
+<path d="M418,78 q8,28 36,36 q-28,8 -36,36 q-8,-28 -36,-36 q28,-8 36,-36Z" fill="#ffd23f" stroke="#2b2350" stroke-width="8" stroke-linejoin="round"/>
+</svg>
