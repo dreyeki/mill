@@ -213,3 +213,18 @@ export function lightbox(src, cap = "") {
   };
   lb.onclick = () => lb.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180 }).onfinish = () => lb.remove();
 }
+
+/* ---------- 數字滾動 ---------- */
+export function countUp(root) {
+  root.querySelectorAll("[data-count]").forEach((el) => {
+    const to = +el.dataset.count;
+    if (reduceMotion() || !to) { el.textContent = to; return; }
+    const t0 = performance.now(), dur = Math.min(1200, 400 + to * 4);
+    const tick = (t) => {
+      const k = Math.min(1, (t - t0) / dur);
+      el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  });
+}

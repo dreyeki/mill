@@ -1,6 +1,6 @@
 import { $, $$, esc, getJSON, debounce, icon } from "../util.js";
 import { S, gain } from "../store.js";
-import { sfx, stars, confetti, buzz } from "../fx.js";
+import { sfx, stars, confetti, buzz, countUp } from "../fx.js";
 
 const GROUPS = [
   { key: "動畫", ico: "🎬", c: "var(--pink-l)", match: ["動畫", "動畫電影", "短動畫", "單篇動畫"] },
@@ -82,7 +82,7 @@ export async function render(view, [yearParam]) {
     body.innerHTML = `
     <section class="year-hero">
       <div class="year-big">${Y.year}</div>
-      <div class="year-label">TOP ${Y.entries.length}</div>
+      <div class="year-label">TOP <span data-count="${Y.entries.length}">0</span></div>
       <div class="podium">${podium.map((e) => {
         const id = `reveal:${Y.year}:${e.rank}`;
         const open = !!S.claimed[id];
@@ -111,6 +111,7 @@ export async function render(view, [yearParam]) {
     <div class="chips" style="margin-top:10px">${chips.map((c) => `<button class="chip${c === filter ? " on" : ""}" data-c="${esc(c)}">${esc(c)}${c !== "全部" ? `<span class="n">${counts[c]}</span>` : ""}</button>`).join("")}</div>
     <div class="rank-list"></div>`;
 
+    countUp(body);
     const list = $(".rank-list", body);
     const paintList = () => {
       const q = query.trim().toLowerCase();

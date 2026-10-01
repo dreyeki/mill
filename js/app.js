@@ -50,6 +50,11 @@ function levelUp(lv) {
 }
 
 /* ---------- 路由 ---------- */
+const SKELETON = `<div class="skel" style="height:44px;margin:10px 0 16px;width:46%"></div>
+  <div class="skel" style="aspect-ratio:16/11"></div>
+  <div class="skel" style="height:96px;margin-top:16px"></div>
+  <div class="skel" style="height:96px;margin-top:12px"></div>`;
+
 let view = $("#view");
 let cleanup = null;
 let navByClick = false;
@@ -86,12 +91,17 @@ async function render() {
   fresh.classList.remove("enter");
   view.replaceWith(fresh);
   view = fresh;
+  const target = view;
+  const sk = setTimeout(() => {
+    if (!target.childElementCount) target.innerHTML = SKELETON;
+  }, 150);
   try {
     cleanup = (await mod.render(view, params, () => my === token)) || null;
   } catch (err) {
     console.error(err);
-    view.innerHTML = `<div class="empty"><span class="big">🥲</span>載入失敗</div>`;
+    view.innerHTML = `<div class="empty"><span class="big">🥲</span>載入失敗<div style="margin-top:14px"><button class="btn btn-sm" onclick="location.reload()">重新整理</button></div></div>`;
   }
+  clearTimeout(sk);
   if (my !== token) return;
   void view.offsetWidth;
   view.classList.add("enter");

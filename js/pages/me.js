@@ -1,6 +1,6 @@
 import { $, esc, getJSON } from "../util.js";
 import { S, levelOf, progressOf, PER_LEVEL, setSetting, exportCode, importCode, reset } from "../store.js";
-import { sheet, toast, confirmBox, sfx, confetti } from "../fx.js";
+import { sheet, toast, confirmBox, sfx, confetti, countUp } from "../fx.js";
 import { site, levelTitle } from "../app.js";
 
 const ago = (t) => {
@@ -26,7 +26,7 @@ export async function render(view) {
         </div>
         <div>
           <div class="me-title">${esc(levelTitle(lv))}</div>
-          <div class="me-pts">${S.points} PTS</div>
+          <div class="me-pts"><span data-count="${S.points}">0</span> PTS</div>
           <div class="me-next">Lv.${lv + 1} 還差 <b>${PER_LEVEL - prog}</b> 分</div>
         </div>
       </div>
@@ -34,9 +34,9 @@ export async function render(view) {
     </section>
 
     <div class="stat-row">
-      <div class="stat card"><b>${S.checkin.streak || 0}</b><span>🔥 連續簽到</span></div>
-      <div class="stat card"><b>${read}</b><span>📚 已讀心得</span></div>
-      <div class="stat card"><b>${Object.keys(S.best).length + Object.keys(S.claimed).filter((k) => k.startsWith("cw:")).length}</b><span>🎮 遊戲紀錄</span></div>
+      <div class="stat card"><b data-count="${S.checkin.streak || 0}">0</b><span>🔥 連續簽到</span></div>
+      <div class="stat card"><b data-count="${read}">0</b><span>📚 已讀心得</span></div>
+      <div class="stat card"><b data-count="${Object.keys(S.best).length + Object.keys(S.claimed).filter((k) => k.startsWith("cw:")).length}">0</b><span>🎮 遊戲紀錄</span></div>
     </div>
 
     <div class="sec-head"><h2 class="sec-title">稱號之路</h2></div>
@@ -60,6 +60,7 @@ export async function render(view) {
       <div class="set-row"><span>🗑️ 重置</span><button class="btn btn-sm reset" style="color:var(--red)">重置</button></div>
     </section>`;
 
+    countUp(view);
     requestAnimationFrame(() => requestAnimationFrame(() => {
       $(".me-ring .fg", view).style.strokeDashoffset = 100 - (prog / PER_LEVEL) * 100;
       $(".xp-bar i", view).style.setProperty("--p", (prog / PER_LEVEL) * 100 + "%");

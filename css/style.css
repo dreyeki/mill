@@ -193,7 +193,7 @@ button { cursor: pointer; background: none; border: 0; padding: 0; }
 }
 @keyframes ripple { to { transform: scale(2.6); opacity: 0; } }
 
-.chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; scrollbar-width: none; scroll-snap-type: x proximity; }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; scroll-padding: 0 2px; scrollbar-width: none; scroll-snap-type: x proximity; }
 .chips::-webkit-scrollbar { display: none; }
 .chip {
   flex: none; scroll-snap-align: start;
@@ -538,7 +538,7 @@ button { cursor: pointer; background: none; border: 0; padding: 0; }
 .pod:nth-child(3) .pod-card:not(.flip) { animation-delay: -1.6s; }
 @keyframes hover-card { 50% { transform: translateY(-6px) rotate(-2deg); } }
 
-.award-strip { display: flex; gap: 12px; overflow-x: auto; margin: 0 -16px; padding: 4px 16px 14px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.award-strip { display: flex; gap: 12px; overflow-x: auto; margin: 0 -16px; padding: 4px 16px 14px; scroll-padding: 0 16px; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .award-strip::-webkit-scrollbar { display: none; }
 .award {
   flex: none; width: 150px; scroll-snap-align: start; padding: 14px 12px 12px;
