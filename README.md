@@ -43,7 +43,7 @@ subtitle: 副標（頭條卡片上的一行字）
 category: 樂團速報
 color: pink            # pink / sky / mint / lemon / violet / orange
 date: 2026-10-01
-cover: assets/img/millsage/cover.svg
+cover: assets/img/millsage/cover.webp
 headline: true         # 放進首頁頭條輪播
 pinned: true           # 置頂
 minLevel: 1            # 選填：幾級才解鎖
@@ -60,10 +60,6 @@ tags: [BanG Dream!, millsage]
 - `![說明](assets/img/xxx.png)` 或 Obsidian 的 `![[xxx.png|說明]]`（會自動到 `assets/` 底下找同名檔案）
 - **連續兩行以上的圖片**會自動變成可左右滑的相簿
 - 站內連結：`[看榜單](#/awards/2025)`
-
-### 換掉 millsage 的示意圖
-
-`assets/img/millsage/` 裡的圖是我用 SVG 畫的原創示意圖，只是用來測試版面。把官方圖放進同一個資料夾，再改 `posts/millsage.md` 裡的檔名（或用一樣的檔名覆蓋）就好。
 
 ## 問卷收回答
 
