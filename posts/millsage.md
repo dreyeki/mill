@@ -9,13 +9,13 @@ headline: true
 pinned: true
 tags: [BanG Dream!, millsage, Our Notes]
 ---
-在MyGO!!!!!即使迷茫也要前進的感動後， **millsage** 成為少女樂隊劇情的另一做高峰。
+在MyGO!!!!!即使迷茫也要前進的感動後， **millsage** 成為少女樂隊劇情的另一座高峰。
 
 ## 介紹
 
-millsage（ミルサージュ）是 BanG Dream! 企劃的新樂團，在 2026 年 9 月 24 日上線的手遊《BanG Dream! Our Notes》登場。最大的特色：==主唱已經死了==。
+millsage（ミルサージュ）是 BanG Dream! 企劃的新樂團，在 2026 年 9 月 24 日上線的手遊《BanG Dream! Our Notes》登場。。
 
-而官方的介紹是「以 Key.&Vo. 汐見蛍天才般的歌聲與演奏為主軸的樂團」，標語則是——
+官方的介紹是「以 Key.&Vo. 汐見蛍天才般的歌聲與演奏為主軸的樂團」，標語則是——
 
 > 両手いっぱいの幸せを、あなたに。（把兩手滿滿的幸福，送給你。）
 
