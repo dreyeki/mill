@@ -15,7 +15,7 @@ tags: [BanG Dream!, millsage, Our Notes]
 
 millsage（ミルサージュ）是 BanG Dream! 企劃的新樂團，在 2026 年 9 月 24 日上線的手遊《BanG Dream! Our Notes》登場。。
 
-官方的介紹是「以 Key.&Vo. 汐見蛍天才般的歌聲與演奏為主軸的樂團」，標語則是——
+官方介紹「以 Key.&Vo. 汐見蛍天才般的歌聲與演奏為主軸的樂團」
 
 > 両手いっぱいの幸せを、あなたに。（把兩手滿滿的幸福，送給你。）
 
